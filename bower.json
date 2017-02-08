@@ -1,0 +1,17 @@
+{
+  "name": "on-off-switch",
+  "main": "on-off-switch.js",
+  "authors": [
+    "Thiago Brito <thiago83brito@hotmail.com>"
+  ],
+  "description": "Angular Directive for checkbox in switch style",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
