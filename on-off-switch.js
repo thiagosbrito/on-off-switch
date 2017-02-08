@@ -8,7 +8,7 @@
         active: '='
       },
       restrict: 'AE', // E = Element, A = Attribute, C = Class, M = Comment
-      templateUrl: '/scripts/directives/on-off-switch/on-off-switch.html',
+      templateUrl: './on-off-switch.html',
       replace: true,
       transclude: true,
       link: function($scope, iElm, iAttrs, controller) {
