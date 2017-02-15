@@ -5,14 +5,16 @@
   module.directive('onOffSwitch', function(){
     return {
       scope: {
-        active: '='
+        active: '=active',
+        onLabel: "@",
+        offLabel: "@"
       },
       restrict: 'AE', // E = Element, A = Attribute, C = Class, M = Comment
       template: "<div class=\"onoffswitch\">" +
         "<input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"myonoffswitch\" ng-model=\"active\">"+
         "<label class=\"onoffswitch-label\" for=\"myonoffswitch\">"+
-          "<span class=\"onoffswitch-inner\"></span>"+
-          "<span class=\"onoffswitch-switch\"></span>"+
+          "<span class=\"onoffswitch-inner\">{{onLabel}}</span>"+
+          "<span class=\"onoffswitch-switch\">{{offLabel}}</span>"+
         "</label>"+
       "</div>",
       replace: true,
@@ -21,6 +23,9 @@
         // $scope.$watch('active', function (value) {
         //   console.log(value);
         // })
+      },
+      controller: function ($scope) {
+        
       }
     };
   })

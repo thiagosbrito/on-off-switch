@@ -35,13 +35,13 @@
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-    content: "Sim";
+    content: "&nbsp;";
     padding-left: 5px;
     background-color: #2ECC71;
     color: #FFFFFF;
 }
 .onoffswitch-inner:after {
-    content: "Não";
+    content: "&nbsp;";
     padding-right: 5px;
     background-color: #E74C3C;
     color: #FFFFFF;
