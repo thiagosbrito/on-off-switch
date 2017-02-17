@@ -5,7 +5,7 @@
   module.directive('onOffSwitch', function(){
     return {
       scope: {
-        active: '='
+        active: '&'
         // ,
         // onLabel: "@",
         // offLabel: "@"
